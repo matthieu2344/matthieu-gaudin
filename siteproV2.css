@@ -1,0 +1,448 @@
+/*Page d'acceuil*/
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --coor1: #2154A2; 
+    --color2: #F4F4F4; 
+}
+body {
+    margin: 0px;
+    font-family: Arial; 
+    line-height: 1.5; 
+}
+
+iframe {
+    width: 100%;
+    border: none; 
+    height: 565px;
+}
+
+
+div.frame {
+    margin: 50px 70px;
+    padding: 20px 30px; 
+    margin-bottom: 50px;
+    background-color: white; 
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+div.cover {
+    background: url(cover_overlay.png), url(cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover; 
+    height: 400px; 
+    position: relative; 
+}
+
+img.cover-profile {
+    height: 150px; 
+    position: relative; 
+    left: 50%; 
+    margin-left: -50px; 
+    margin-top: 50px
+    
+}
+
+.marge-title {
+    margin-left: 45px;
+}
+
+h1 {
+    color: white; 
+    text-align: center;
+    font-size: 42px; 
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    text-align: center; 
+    font-size: 34px; 
+}
+
+div.cover p {
+    color: lightgrey; 
+    text-align: center;
+    margin-top: 4px; 
+    font-size: 14px
+}
+
+div.cover-contact p:first-child {
+    margin-bottom: 14px; 
+}
+
+div.cover-contact {
+        position: absolute;
+        color: white; 
+        top: 10px; 
+        left: 10px;
+        border-left: 4px solid var(--coor1); 
+        padding-left: 8px; 
+}
+
+div.cover-contact p {
+    text-align: left; 
+} 
+div.cover-contact * {
+    color: white; 
+    font-size: 14px; 
+}
+
+div.contact-buttun a{
+    color: var(--coor1); 
+    background-color: #00000040;
+    padding: 8px 20px; 
+    border: 3px solid var(--coor1);
+    text-decoration: none; 
+    margin-left: 50px;
+    margin-top: 0px;
+}
+
+div.contact-buttun a:hover {
+    color: white; 
+    border: 3px solid white; 
+}
+
+div.contact-buttun{
+    margin-top: 40px; 
+}
+
+div.sectiongrise1 {
+    background: url(triangle2white.svg);
+    background-color: var(--color2);
+    height: 275px; 
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100%;
+    padding: 30px 40px 60px 40px; 
+}
+
+div.sectiongrise2 {
+    background: url(triangle1white.svg);
+    background-color: var(--color2);
+    height: 725px; 
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    padding-top: 125px;
+}
+
+div.sectionblanche1 {
+    height: 525px;
+}
+
+.section {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 800px;
+    overflow: auto;
+}
+
+.sectioncontenu {
+    height: 825px;
+    text-align: center;
+}
+
+div.sectiongrise1 p {
+    text-align: center;
+    font-size: 22px; 
+    color: #656565; 
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.separateur {
+    height: 1px;
+    width: 150px; 
+    background-color: #979797;
+    position: relative;
+    left: 50%;
+    margin-left: -75px;
+}
+
+img.col-contenu {
+    width: 40%;
+}
+
+div.col-contenu {
+    width: 60%;
+    padding-left: 16px;
+    
+}
+
+.float-right {
+    float: right;
+    padding-left: 16px;
+}
+
+.text-ligne-verticale {
+    margin-top: Opx;
+    border-left: 4px solid var(--coor1); 
+    padding-left: 8px;
+    height: 50px;
+    display: inline-block;
+}
+
+div.text-ligne-verticale p{
+    margin-top: 0px;
+}
+
+div.barre-verticale {
+    background-color: var(--coor1);
+    height: 50px; 
+    width: 4px; 
+    margin-right: 8px;
+}
+
+.colonne-portfolio {
+    width: 47%;
+}
+
+
+p.frametitle {
+    font-size: 30px; 
+    margin-top: 5px; 
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+div.ligne-verticale-frame {
+    margin-top: 0px;
+    border-left: 4px solid var(--coor1); 
+    padding-left: 8px;
+    height: 50px;
+    display: inline-block;
+}
+
+div.ligne-verticale-frame p {
+    margin-top: 0px;
+}
+
+table.table-bottom {
+    margin-left: 100px;
+}
+
+table.tabel1 tr td table {
+    border-collapse: separate;
+}
+
+
+
+/*Portfolio*/
+
+div.portfolio-header {
+    background: url(cover.jpg) no-repeat center/cover;
+    height: 90px;
+    position: relative;
+}
+
+.display-mobile {
+    display: none;
+}
+
+p.portfolio-header-title {
+    color: white;
+    font-weight: bold; 
+    font-size: 26px;
+    margin-top: 4px;
+    margin-left: 8px;
+    display: inline-block;
+    padding-top: 4px;
+    padding-left: 8px;
+    display: block;
+}
+
+.contact-buttun-protfolio {
+    color: var(--coor1); 
+    background-color: #00000040;
+    padding: 8px 20px; 
+    border: 3px solid var(--coor1);
+    text-decoration: none; 
+    display: inline-block;
+    margin-top: 3px;   
+    font-size: 14px; 
+    position: absolute; 
+    right: 20px; 
+    top: 20px;
+
+}
+
+div.portfolio-title h1 {
+    color: black;
+    font-size: 46px; 
+    line-height: 1;
+    padding-top: 10px;
+}
+
+div.portfolio-title h2 {
+    color: black;
+    font-size: 26px; 
+    weight: normal; 
+    line-height: 0.1;
+}
+
+a.portfolio-back {
+    color: var(--coor1);
+    margin-left: -10px; 
+}
+
+
+
+/*Responsive disgn*/
+
+@media only screen and (max-width: 767px) {
+    img.cover-profile {
+        height: 90px; 
+        margin-top: 75px
+        
+    }
+    
+    h1 {
+        font-size: 38px; 
+        margin-top: 6px;
+        margin-bottom: 0px;
+    }
+    
+    div.cover p {
+        margin-top: 2px; 
+        font-size: 13px
+    }
+
+    .section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    div.sectiongrise1 {
+        padding-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 30px; 
+    } 
+
+    .col40 {
+        width: 100%;
+    }
+    
+    .col60 {
+        width: 100%;
+        
+    }
+
+    .colonne-portfolio {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    div.col-contenu {
+        width: 100%;
+        padding-left: 0px;
+        margin-top: 20px;
+        
+    }
+
+    iframe {
+        width: 100%px;
+        height: 275px;
+        margin-top: 10px;
+    }
+
+    div.frame {
+        margin: 0px 0px;
+        padding: 0px 0px; 
+        margin-bottom: 0px;
+        margin-top: 0px;
+        box-shadow: none; 
+    }
+
+    .portfolio-header-title {
+        font-size: 20px;
+        padding-top: 8px;
+        padding-left: 8px;
+    }
+
+    .contact-buttun-protfolio {
+        color: var(--coor1); 
+        background-color: #00000040;
+        padding: 5px 13px; 
+        border: 3px solid var(--coor1);
+        text-decoration: none; 
+        display: inline-block;
+        margin-top: 7px;   
+        font-size: 12px; 
+        position: absolute; 
+        right: 5px; 
+        top: 20px;
+    
+    }
+
+    img.portfolio {
+        width: 100%; 
+    }
+
+    .display-mobile {
+        display: block;
+    }
+
+    div.sectiongrise1 {
+        height: 275px;
+    }
+
+    .h2-portfolio {
+        font-size: 10px; 
+    }
+
+    div.sectiongrise2 {
+        height: 825px;
+        padding-top: 75px;
+    }
+
+    img.col-contenu {
+        display: none;
+    }
+
+    div.sectionblanche1 {
+        height: 650px;
+    }
+
+    img.cover-profile {
+        height: 170px; 
+        left: 45%; 
+    }
+
+    div.cover-contact {
+            top: 10px; 
+            left: 10px;
+    }
+    
+    div.contact-buttun a{
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+
+    
+    div.contact-buttun{
+        margin-top: 20px; 
+    }
+
+    .marge-title {
+        margin-left: 10px;
+    }
+    
+    .sectioncontenu {
+        height: 920px;
+    }
+
+    .separateur {
+        margin-bottom: 50px;
+        margin-top: 0px;
+    }
+}
